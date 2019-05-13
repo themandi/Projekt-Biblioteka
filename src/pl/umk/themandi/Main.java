@@ -1,20 +1,16 @@
 package pl.umk.themandi;
 
-import java.util.ArrayList;
+import java.sql.SQLException;
+
 
 public class Main
 {
-    public static void main(String[] args)
-    {
-        ArrayList<Czytelnik> czytelnicy = new ArrayList<>();
-        ArrayList<Pracownik> pracownicy = new ArrayList<>();
-        ArrayList<Wypozyczenia> wypozyczenie = new ArrayList<>();
-        Ksiazka ksiazki = new Ksiazka();
-        Wydawnictwo wydawnictwa = new Wydawnictwo();
-        Autor autor = new Autor();
-        Register register = new Register();
-        Admin admin = new Admin();
-        Login login = new Login();
+    public static void main(String[] args) throws SQLException {
+        Database database = new Database();
+        Czytelnik czytelnik = database.getCzytelnik("1oo");
 
+        System.out.println(czytelnik.getHaslo());
     }
+
+    public Main() throws SQLException {}
 }

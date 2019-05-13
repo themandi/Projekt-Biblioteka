@@ -16,4 +16,6 @@ public class Czytelnik extends User
         this.telefon = telefon;
         this.data = data;
     }
+
+    public Czytelnik(){}
 }

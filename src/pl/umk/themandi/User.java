@@ -12,6 +12,8 @@ public abstract class User
         this.Userid = userid;
     }
 
+    public User(){}
+
     public String getLogin() {
         return Login;
     }
