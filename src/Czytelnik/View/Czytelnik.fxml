@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onMouseDragged="#dragged" onMousePressed="#pressed" prefHeight="496.0" prefWidth="704.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Czytelnik.Controller.AppController">
+   <children>
+      <AnchorPane prefHeight="496.0" prefWidth="203.0" style="-fx-background-color: #01579B;">
+         <children>
+            <Pane prefHeight="71.0" prefWidth="238.0" style="-fx-background-color: #01579B;">
+               <children>
+                  <Label alignment="CENTER" layoutX="-5.0" layoutY="20.0" prefHeight="71.0" prefWidth="245.0" text="BIBLIOTEKA" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="31.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <JFXButton layoutX="24.0" layoutY="116.0" onMousePressed="#wyszukajksiazke" prefHeight="44.0" prefWidth="207.0" ripplerFill="#f5f3f3" text="Wyszukaj książkę" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="BOOK" />
+               </graphic>
+               <font>
+                  <Font name="Raleway" size="15.0" />
+               </font></JFXButton>
+            <JFXButton layoutX="25.0" layoutY="167.0" onMousePressed="#mojewypozyczenia" prefHeight="29.0" prefWidth="207.0" ripplerFill="#f5f3f3" text="Moje wypożyczenia" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="USER" />
+               </graphic>
+               <font>
+                  <Font name="Raleway" size="15.0" />
+               </font></JFXButton>
+            <JFXButton layoutX="22.0" layoutY="208.0" onMousePressed="#kartaobiegowa" prefHeight="30.0" prefWidth="207.0" ripplerFill="#f5f3f3" text="Karta obiegowa" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="USER" />
+               </graphic>
+               <font>
+                  <Font name="Raleway" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="16.0" layoutY="367.0" onMousePressed="#Opcje" prefHeight="31.0" prefWidth="207.0" ripplerFill="#f5f3f3" text="Opcje" textFill="WHITE">
+
+               <font>
+                  <Font name="Raleway" size="15.0" />
+               </font>
+            </JFXButton>
+
+            <JFXButton layoutX="16.0" layoutY="404.0" onMousePressed="#powrot" prefHeight="29.0" prefWidth="207.0" ripplerFill="#f5f3f3" text="Wyloguj" textFill="WHITE">
+               <font>
+                  <Font name="Raleway" size="15.0" />
+               </font></JFXButton>
+
+            <JFXButton layoutX="16.0" layoutY="451.0" onMousePressed="#wyjscie" prefHeight="31.0" prefWidth="207.0" ripplerFill="#f5f3f3" text="Wyjście" textFill="WHITE">
+
+               <font>
+                  <Font name="Raleway" size="15.0" />
+               </font>
+            </JFXButton>
+
+
+
+         </children>
+      </AnchorPane>
+      <JFXToolbar layoutX="278.0" layoutY="45.0" prefHeight="44.0" prefWidth="390.0">
+         <left>
+            <Label id="nameuser" fx:id="nameuser" graphicTextGap="9.0" prefHeight="63.0" prefWidth="300.0" text="Witaj, nick!" BorderPane.alignment="CENTER">
+               <graphic>
+                  <FontAwesomeIcon glyphName="PENCIL">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </FontAwesomeIcon>
+               </graphic>
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </left>
+      </JFXToolbar>
+      <Label id="information" fx:id="information" layoutX="257.0" layoutY="105.0"  prefHeight="345.0" prefWidth="443.0" text="Biblioteka dla młodzieży i dorosłych&#10;Materiały biblioteczne to zbiór dokumentów, które są gromadzone, &#10;przechowywane i udostępniane w bibliotece. Klasyczne zbiory &#10;biblioteczne są mocno związane z nośnikami fizycznymi. &#10;Materiały dostępne w postaci cyfrowej są gromadzone i udostępniane &#10;w tzw. bibliotekach cyfrowych.&#10;&#10;W bibliotece gromadzone są dzieła zwielokrotnione dowolną &#10;techniką w celu rozpowszechnienia, a w szczególności:&#10;&gt; piśmniennicze,&#10;&gt; graficzne albo graficzno-piśmiennicze,&#10;&gt; audiowizalne." textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

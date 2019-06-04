@@ -1,11 +1,15 @@
 package pl.umk.themandi;
 
-public class Pracownik extends User {
+public class Pracownik{
     public int id_pracownika;
+    public String login;
+    public String haslo;
 
-    public Pracownik(int userid, String login, String password, int id_pracownik)
+    public Pracownik(int id_pracownika, String login, String haslo)
     {
-        super(userid, login, password);
-        this.id_pracownika = id_pracownik;
+
+        this.id_pracownika = id_pracownika;
+        this.login = login;
+        this.haslo = haslo;
     }
 }

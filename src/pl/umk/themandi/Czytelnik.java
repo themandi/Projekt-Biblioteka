@@ -1,20 +1,28 @@
 package pl.umk.themandi;
 
-public class Czytelnik extends User
+public class Czytelnik
 {
-    public int id_czytelnika;
+    public int id_czytelnik;
+    public String login;
+    public String haslo;
+    public String imie;
+    public String nazwisko;
+    public String adres_zamieszkania;
+    public String miasto;
+    public String numer_telefonu;
     public String email;
-    public int telefon;
-    /*nie moge znalezc odpowiednika daty*/
-    public int data;
 
-    public Czytelnik(int userid, String login, String password, int id_czytelnik, String mail, int telefon, int data)
+    public Czytelnik(int id_czytelnik, String login, String haslo, String imie, String nazwisko, String adres_zamieszkania, String miasto, String numer_telefonu, String email)
     {
-        super(userid, login, password);
-        this.id_czytelnika = id_czytelnik;
-        this.email = mail;
-        this.telefon = telefon;
-        this.data = data;
+        this.id_czytelnik = id_czytelnik;
+        this.login = login;
+        this.haslo = haslo;
+        this.imie = imie;
+        this.nazwisko = nazwisko;
+        this.adres_zamieszkania = adres_zamieszkania;
+        this.miasto = miasto;
+        this.numer_telefonu = numer_telefonu;
+        this.email = email;
     }
 
     public Czytelnik(){}
